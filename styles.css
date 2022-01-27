@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap");
+
+/* remove margin, padding from all elements
+width of an element is border size 
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: tan;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+/* for seatch and icon  */
+.header {
+  grid-column: 1/7;
+  grid-row: 1/2;
+  display: flex;
+  gap: 1rem;
+}
+.create {
+  cursor: hand;
+  padding: 0.5rem;
+}
+/* for nav bar  */
+.aside {
+  grid-column: 1/3;
+  grid-row: 2/7;
+}
+/*  */
+.msgwrapper {
+  grid-column: 3/7;
+  grid-row: 2/7;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.msgtools {
+  grid-column: 1/7;
+  grid-row: 1/2;
+}
+.titleandmsg {
+  grid-column: 1/7;
+  grid-row: 2/7;
+  outline: none;
+  border: none;
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 1.5rem;
+  font-weight: normal;
+  background: tan;
+  display: flex;
+  flex-direction: column;
+}
+.msg {
+  flex: 1;
+}
+.precode {
+  grid-column: 1/7;
+  grid-row: 2/7;
+  outline: none;
+  border: none;
+  padding: 2rem;
+  font-family: "Sedgwick Ave", cursive;
+  font-size: 1.5rem;
+  font-weight: normal;
+  background: tan;
+}
+.msgwrap {
+  margin-bottom: 0.4rem;
+  background: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  background: tan;
+}
+
+.titledate {
+  display: flex;
+}
+.msgtitle {
+  flex: 1;
+}
+.msgdate {
+  margin-right: 0.2rem;
+}

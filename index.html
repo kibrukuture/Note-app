@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note app</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--header tag , contains two division 	 -->
+      <header class="header">
+        <div class="search">
+          <p class="searchicon"></p>
+          <input
+            maxlength="20"
+            type="text"
+            placeholder="search your note here..."
+            class="searchinput"
+          />
+        </div>
+        <div class="create">create</div>
+      </header>
+      <!--side bar 		 -->
+      <aside class="aside">
+        <!-- all the notes go here		 -->
+      </aside>
+      <article class="msgwrapper">
+        <div class="msgtools"></div>
+        <div class="titleandmsg">
+          <input placeholder="what is the title" type="text" class="title" />
+          <textarea class="msg" placeholder="write in here..."></textarea>
+        </div>
+      </article>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
